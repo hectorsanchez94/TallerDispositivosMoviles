@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gestor_Pacientes</string>
+    <string name="pacientes">Pacientes</string>
+    <string name="medicamentos">Medicamentos</string>
+    <string name="mod_pacientes">Modificar Pacientes</string>
+    <string name="mod_medicamento">Modificar Medicamentos</string>
+    <string name="alta_medicamento">Alta de  Medicamentos</string>
+    <string name="alta_paciente">Alta de Pacientes</string>
+</resources>
