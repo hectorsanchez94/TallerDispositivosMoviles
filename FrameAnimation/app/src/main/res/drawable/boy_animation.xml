@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/boy_01" android:duration="200"/>
+    <item android:drawable="@drawable/boy_02" android:duration="200"/>
+    <item android:drawable="@drawable/boy_03" android:duration="200"/>
+    <item android:drawable="@drawable/boy_04" android:duration="200"/>
+    <item android:drawable="@drawable/boy_05" android:duration="200"/>
+    <item android:drawable="@drawable/boy_06" android:duration="200"/>
+    <item android:drawable="@drawable/boy_07" android:duration="200"/>
+    <item android:drawable="@drawable/boy_08" android:duration="200"/>
+    <item android:drawable="@drawable/boy_09" android:duration="200"/>
+    <item android:drawable="@drawable/boy_10" android:duration="200"/>
+    <item android:drawable="@drawable/boy_11" android:duration="200"/>
+    <item android:drawable="@drawable/boy_12" android:duration="200"/>
+    <item android:drawable="@drawable/boy_13" android:duration="200"/>
+    <item android:drawable="@drawable/boy_14" android:duration="200"/>
+    <item android:drawable="@drawable/boy_15" android:duration="200"/>
+    <item android:drawable="@drawable/boy_16" android:duration="200"/>
+    <item android:drawable="@drawable/boy_17" android:duration="200"/>
+    <item android:drawable="@drawable/boy_18" android:duration="200"/>
+    <item android:drawable="@drawable/boy_19" android:duration="200"/>
+    <item android:drawable="@drawable/boy_20" android:duration="200"/>
+
+
+
+
+
+
+</animation-list>
