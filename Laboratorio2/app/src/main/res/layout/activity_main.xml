@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ittepic.edu.mx.laboratorio2.MainActivity">
+
+
+    <EditText
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Sintomas"
+            android:ems="10"
+            android:layout_below="@+id/recom"
+            android:layout_alignEnd="@+id/recom"
+            android:layout_marginTop="21dp"
+            android:id="@+id/sintomas"
+            />
+
+        <EditText
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Recomendaciones"
+            android:ems="10"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/recom"
+            />
+
+    <Button
+        android:text="Borrar"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/borrar"
+        />
+
+    <Button
+        android:text="leer"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/leer"
+        android:onClick="leer" />
+
+    <Button
+        android:text="guardar"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/guardar"
+        android:layout_alignParentEnd="true"
+        android:onClick="dailyInput" />
+
+</LinearLayout>

@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class Modificar extends AppCompatActivity {
 
-    EditText edtNombre, edtTelefono,edtEmail;
+    EditText edtNombre, edtTelefono;
     Button btnModificar;
     int id;
     String nombre,telefono,email;
@@ -36,17 +36,15 @@ public class Modificar extends AppCompatActivity {
 
         edtNombre = (EditText) findViewById(R.id.edt_nombre);
         edtTelefono = (EditText) findViewById(R.id.edt_tel);
-        edtEmail = (EditText) findViewById(R.id.edt_email);
         btnModificar = (Button) findViewById(R.id.btn_modificar);
 
         edtNombre.setText(nombre);
         edtTelefono.setText(telefono);
-        edtEmail.setText(email);
 
         btnModificar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                modificar(id,edtNombre.getText().toString(),edtTelefono.getText().toString(),edtEmail.getText().toString());
+                modificar(id,edtNombre.getText().toString(),edtTelefono.getText().toString());
                 startActivity(new Intent(Modificar.this,Listado.class));
                 finish();
             }
@@ -63,11 +61,11 @@ public class Modificar extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void modificar (int Id, String Nombre, String Telefono, String Email){
+    private void modificar (int Id, String Nombre, String Telefono){
         BaseHelper helper = new BaseHelper(this,"BD2.db",null,1);
         SQLiteDatabase db = helper.getWritableDatabase();
         try{
-            String sql = "UPDATE CONTACTOS SET NOMBRE='"+Nombre+"', TELEFONO='"+Telefono+"', EMAIL='"+Email+"' WHERE ID="+Id;
+            String sql = "UPDATE CONTACTOS SET NOMBRE='"+Nombre+"', TELEFONO='"+Telefono+"' WHERE ID="+Id;
             db.execSQL(sql);
             db.close();
             Toast.makeText(this,"Registro modificado",Toast.LENGTH_SHORT).show();
